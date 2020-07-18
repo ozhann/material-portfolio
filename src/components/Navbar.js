@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobileRightMenu from "@material-ui/core/Drawer";
-
+import Footer from "./Footer";
 import avatar from "../avatar.jpg";
 
 import {
@@ -120,6 +120,7 @@ const Navbar = () => {
               onClose={() => toggleSlider("right", false)}
             >
               {slideList("right")}
+              <Footer />
             </MobileRightMenu>
           </Toolbar>
         </AppBar>
